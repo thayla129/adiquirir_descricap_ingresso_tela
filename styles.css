@@ -473,3 +473,30 @@ ul {
 #theTownModal .button-container {
   margin: 30px 0;
 }
+
+
+
+/* Estilos para os termos e condições */
+.termos-condicoes {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.termos-condicoes p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.termos-condicoes ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.termos-condicoes li {
+  margin-bottom: 5px;
+}
