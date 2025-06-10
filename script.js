@@ -128,3 +128,5 @@ document.querySelector('.town-close').onclick = function() {
     window.history.back(); // Esta linha faz voltar para a página anterior
 }
 
+
+
