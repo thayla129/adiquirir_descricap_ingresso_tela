@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal de Ingressos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="openModal">Tela de Ingressos</button>
+
+    <div id="ticketModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>Adquirir ingresso</h1>
+                <div class="close-container">
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="event-header">
+                    <img src="img/MOBILE-480x667-2.jpg" alt="Jorge e Mateus" class="event-image">
+                    <div class="event-info">
+                      <div class="event-info-container"><p>Jorge & Mateus comemoram 20 anos de sucesso com um show exclusivo a bordo do Navio. Com um repertório repleto dos maiores hits, a dupla promete uma noite emocionante e cheia de energia, celebrando duas décadas de uma carreira marcada pela conexão especial com o público, em um cenário único e inesquecível no meio do mar.</p></div>
+                      <h3>Jorge e Mateus 2025</h3>
+      
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="button-container">
+                
+                    <button class="descricao-btn">Descrição do Evento</button>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <h2>Meus ingressos</h2>
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="ativos">Ingressos Ativos</button>
+                    <button class="tab-button" data-tab="pendentes">Ingressos Pendentes</button>
+                    <button class="tab-button" data-tab="encerrados">Ingressos Encerrados</button>
+                </div>
+                
+                <div id="ativos" class="tab-content active">
+                    <div class="ticket-item">
+                        <img src="img/thetown2025.webp" alt="MITANIAS" class="ticket-image">
+                        <div class="ticket-details">
+                            <h4>The Town 2025</h4>
+                            <p>Ingresso: Pista</p>
+                            <p class="status altro">Ativo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ticket-item">
+                        <img src="img/17-03-2025_22-17-36.jpg" alt="Altros" class="ticket-image">
+                        <div class="ticket-details">
+                            <h4>Festa Junina 2025</h4>
+                            <p>Ingresso: Gratuito</p>
+                            <p class="status altro">Ativo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ticket-item">
+                        <img src="img/17443076937451.webp" alt="TIBIAN DE LIN" class="ticket-image">
+                        <div class="ticket-details">
+                            <h4>Coachella</h4>
+                            <p>Ingresso: VIP</p>
+                            <p class="status altro">Ativo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="ticket-item">
+                        <img src="img/terrasp.avif" alt="Terra SP" class="ticket-image">
+                        <div class="ticket-details">
+                            <h4>Terra SP</h4>
+                            <p>Ingresso: VIP</p>
+                            <p class="status altro">Ativo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="pendentes" class="tab-content">
+                    <div class="ticket-item">
+                        <img src="img/luanaprado.jfif" alt="LAHANA" class="ticket-image">
+                        <div class="ticket-details">
+                            <h4>Lauana Prado</h4>
+                            <p>Ingresso: Pista</p>
+                            <p class="status pendente">Pendente</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="encerrados" class="tab-content">
+                    <div class="ticket-item">
+                        <img src="img/villlamax.jpg" alt="Villa Mix" class="ticket-image">
+                        <div class="ticket-details">
+                            <h4>Villa Mix 2025</h4>
+                            <p>Ingresso: Pista</p>
+                            <p class="status encerrado">Encerrado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Novo modal para Garantir Ingresso -->
+    <div id="garantirModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Garantir Ingresso</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Ao adquirir ingresso para este evento, você:</p>
+                <ul>
+                    <li>Confirma que leu todas as regras disponíveis no site;</li>
+                    <li>Aceita Integralmente os Termos de Uso;</li>
+                    <li>Concorda com a Política de Privacidade;</li>
+                    <li>Reconhece que a compra implica aceitação dessas condições.</li>
+                </ul>
+                <div class="modal-actions">
+                    <button class="btn-confirm">Continuar</button>
+                    <button class="btn-cancel">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+
+   <!-- Modal para The Town -->
+<div id="theTownModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>The Town 2025</h1>
+            <div class="close-container">
+                <span class="close town-close">&times;</span>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="event-header">
+                <img src="img/thetown2025.webp" alt="The Town 2025" class="event-image">
+                <div class="event-info">
+                    <div class="event-time-location">
+                        <p class="event-date">12 set - 2025</p>
+                        <p class="event-hours">16h00 → 04h00</p>
+                        <p class="event-location">Autódromo de Interlagos, São Paulo – SP</p>
+                    </div>
+                    
+                    <h2>Descrição do Evento</h2>
+                    <div class="event-info-container">
+                        <p>O The Town 2025 promete ser um dos maiores festivais de música e cultura de São Paulo, em sua segunda edição. O evento acontecerá no Autódromo de Interlagos, transformado na "Cidade da Música", nos dia 12 de setembro de 2025.</p>
+                        <p>Com uma programação diversificada que inclui grandes nomes da música nacional e internacional, o festival oferecerá experiências imersivas, gastronomia de qualidade e uma estrutura completa para receber milhares de pessoas.</p>
+                    </div>
+                    
+                    <h3>Festival Musical</h3>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="button-container">
+                <button class="garantir-btn town-garantir">Garantir ingresso</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
